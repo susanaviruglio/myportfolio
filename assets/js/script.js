@@ -57,3 +57,24 @@ ScrollReveal({
     backDelay: 1000,
     loop: true
  });
+
+
+  /*==================== contact us ====================*/
+
+
+  (function() {
+    emailjs.init("0GNGApD7uwxmYyNyD"); // Tu User ID de EmailJS
+})();
+
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Sustituye con tu Service ID y Template ID
+    emailjs.sendForm('service_sopao7k', 'template_wj5xcug', form)
+      .then(function(response) {
+        alert('Mensaje enviado con éxito!', response);
+      }, function(error) {
+        alert('Hubo un error al enviar el mensaje.', error);
+      });
+});
