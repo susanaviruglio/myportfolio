@@ -63,7 +63,7 @@ ScrollReveal({
 
 
   (function() {
-    emailjs.init("susana"); // Tu User ID de EmailJS
+    emailjs.init("0GNGApD7uwxmYyNyD"); // Tu User ID de EmailJS
 })();
 
 const form = document.getElementById('contact-form');
